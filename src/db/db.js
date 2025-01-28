@@ -1,17 +1,18 @@
 import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDg4w26DTOmWXfmKz8S-ulP4jiJ6C1Yrt4",
-    authDomain: "ecommerce-63395.firebaseapp.com",
-    projectId: "ecommerce-63395",
-    storageBucket: "ecommerce-63395.firebasestorage.app",
-    messagingSenderId: "865369338169",
-    appId: "1:865369338169:web:40d6816a5b137bef18b8e8"
+    apiKey: "AIzaSyCiHamLBI_BmEMUZBxD_8ajtiyyxMgkPeA",
+    authDomain: "serigrafiagomez-1f45a.firebaseapp.com",
+    projectId: "serigrafiagomez-1f45a",
+    storageBucket: "serigrafiagomez-1f45a.firebasestorage.app",
+    messagingSenderId: "238628361821",
+    appId: "1:238628361821:web:e6c77210b2364a27959fb4",
+    measurementId: "G-FCEHJTNPJF",
 };
 
 const app = initializeApp(firebaseConfig);
-
+const analytics = getAnalytics(app);
 const db = getFirestore();
-
 export default db;

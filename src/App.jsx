@@ -18,8 +18,8 @@ function App() {
           <ToastContainer theme="dark" position="bottom-center" />
 
           <Routes>
-            <Route path="/" element={<ItemListContainer greeting={"Bienvenidos a mi ecommerce"} />} />
-            <Route path="/category/:idCategory" element={<ItemListContainer greeting={"Bienvenidos a mi ecommerce"} />} />
+            <Route path="/" element={<ItemListContainer greeting={"Serigrafía Gomez"} />} />
+            <Route path="/category/:idCategory" element={<ItemListContainer greeting={"Serigrafía Gomez"} />} />
             <Route path="/detail/:idProduct" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
